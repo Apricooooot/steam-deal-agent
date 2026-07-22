@@ -12,6 +12,12 @@
 
 `search_steam_deals` queries the chosen country's active Steam offers, resolves ITAD game IDs to Steam products, rejects non-base-game items, and checks price history. A profile can add ownership status. Prices use integer minor units in structured results.
 
+## Local memory
+
+`get_user_preferences` reads structured memory. `remember_preference` writes either a long-term key/value or an expiring recent-interest topic. `record_game_feedback` stores App-ID feedback. `forget_preference` deletes one item. `clear_user_memory` requires `confirmed: true` and clears everything.
+
+Memory defaults to the user's `.steam-deal-agent/memory.json`; `STEAM_DEAL_AGENT_DATA_DIR` can relocate it. Writes are atomic and the file is created with owner-only permissions where supported. Search arguments supplied in the current conversation override remembered defaults.
+
 ## Failure handling
 
 - Missing key: explain which environment variable is needed; do not request its value in chat.
