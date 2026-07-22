@@ -1,0 +1,23 @@
+{
+  "name": "steam-deal-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Local MCP server and Codex skill for evidence-backed Steam deal recommendations.",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/index.ts",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "check": "npm run test && npm run build"
+  },
+  "engines": { "node": ">=22" },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.8.0"
+  }
+}
