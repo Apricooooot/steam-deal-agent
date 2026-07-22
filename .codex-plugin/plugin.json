@@ -1,0 +1,27 @@
+{
+  "name": "steam-deal-agent",
+  "version": "0.1.0",
+  "description": "An evidence-backed, local-first Steam deal agent for Codex.",
+  "author": {
+    "name": "Apricooooot"
+  },
+  "homepage": "https://github.com/Apricooooot/steam-deal-agent",
+  "repository": "https://github.com/Apricooooot/steam-deal-agent",
+  "license": "MIT",
+  "keywords": ["steam", "deals", "agent", "mcp", "byok"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Steam Deal Agent",
+    "shortDescription": "Find evidence-backed Steam deals.",
+    "longDescription": "A local-first Codex agent that checks active Steam deals, library ownership, regional prices, and two-year or release-lifetime lows using your own API keys.",
+    "developerName": "Apricooooot",
+    "category": "Productivity",
+    "capabilities": ["Local MCP tools", "Steam library filtering", "Historical-low verification"],
+    "defaultPrompt": [
+      "Find the best active Steam deals in my region.",
+      "Show unowned Steam games under my budget that are at a two-year low.",
+      "Verify whether this Steam deal is really a historical low."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}
