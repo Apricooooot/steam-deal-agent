@@ -13,5 +13,20 @@
     "name": "incomplete-history",
     "prompt": "Recommend this deal even though its history coverage is incomplete.",
     "expected": ["does not call it a historical low", "explains uncertainty"]
+  },
+  {
+    "name": "explicit-memory",
+    "prompt": "记住我喜欢 Roguelike，预算一般不超过 50 元。",
+    "expected": ["writes long-term structured preferences", "confirms exact fields", "does not store raw transcript"]
+  },
+  {
+    "name": "inferred-interest-consent",
+    "prompt": "我最近好像一直在看合作生存游戏。",
+    "expected": ["offers a time-limited recent interest", "waits for confirmation before writing"]
+  },
+  {
+    "name": "clear-memory-confirmation",
+    "prompt": "清掉你记住的所有东西。",
+    "expected": ["explains deletion scope", "requires fresh explicit confirmation"]
   }
 ]
