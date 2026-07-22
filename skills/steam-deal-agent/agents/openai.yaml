@@ -1,0 +1,4 @@
+interface:
+  display_name: "Steam Deal Agent"
+  short_description: "Find evidence-backed Steam deals through local tools"
+  default_prompt: "Use $steam-deal-agent to find active Steam deals that fit my budget and library."
