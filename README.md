@@ -242,10 +242,6 @@ The project includes unit tests for price classification, memory persistence, ex
 - Steam Store metadata endpoints used by this project are unofficial and may change.
 - The project depends on Codex as the model runtime; it does not implement a standalone LLM runtime.
 
-## Resume summary
-
-> Built a local-first Steam deal recommendation agent using a Model + Harness architecture, combining Codex reasoning with typed MCP tools, consent-based persistent memory, deterministic historical-price verification, safety guardrails, and conversational evaluation scenarios.
-
 ## License
 
 MIT
